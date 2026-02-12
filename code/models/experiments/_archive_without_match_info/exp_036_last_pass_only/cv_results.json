@@ -1,0 +1,34 @@
+{
+  "experiment": "exp_036_last_pass_only",
+  "cv_mean": 15.48809071108442,
+  "cv_std": 0.13289858047408293,
+  "cv_folds": [
+    15.334529861698046,
+    15.658718608784827,
+    15.471023662770385
+  ],
+  "n_samples": 15435,
+  "n_features": 19,
+  "feature_cols": [
+    "episode_id",
+    "action_id",
+    "zone_x",
+    "zone_y",
+    "prev_dx",
+    "prev_dy",
+    "direction",
+    "goal_distance",
+    "goal_angle",
+    "time_left",
+    "game_clock_min",
+    "pass_count",
+    "is_home_encoded",
+    "type_encoded",
+    "result_encoded",
+    "is_final_team",
+    "team_possession_pct",
+    "team_switches",
+    "final_poss_len"
+  ],
+  "baseline": "Phase1A (CV 15.45, Public 15.35)"
+}

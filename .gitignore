@@ -1,0 +1,31 @@
+*.csv
+*.tsv
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.pkl
+*.pth
+*.npy
+*.cbm
+*.tfevents
+*.tmp
+*.log
+.DS_Store
+__pycache__/
+*.pyc
+
+# Directories to ignore completely
+data/
+logs/
+catboost_info/
+submissions/
+archive/
+.git/
+.idea/
+.vscode/
+
+# Exceptions (Allow specific important files if needed, but currently keeping it strict)
+!data_description.xlsx
+!analysis_results/*.csv

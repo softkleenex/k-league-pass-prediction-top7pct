@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-12-17T02:54:56.532800",
+  "experiment": "Phase 1-A Full Data CV",
+  "description": "\uacf5\uc720 \ucf54\ub4dc \uc778\uc0ac\uc774\ud2b8 5\uac1c \ud1b5\ud569 (21\uac1c \ud53c\ucc98)",
+  "data": {
+    "train_path": "/mnt/c/LSJ/dacon/dacon/kleague-algorithm/data/train.csv",
+    "n_episodes": 15435,
+    "sample_frac": 1.0,
+    "n_features": 21
+  },
+  "cv": {
+    "mean": 15.292208403575065,
+    "std": 0.14014117541917118,
+    "folds": [
+      15.18604184564776,
+      15.490225529707699,
+      15.200357835369738
+    ]
+  },
+  "params": {
+    "subsample": 0.8,
+    "random_state": 42,
+    "verbose": 0,
+    "iterations": 300,
+    "depth": 8,
+    "learning_rate": 0.05
+  },
+  "features": [
+    "start_x",
+    "start_y",
+    "zone_x",
+    "zone_y",
+    "direction",
+    "prev_dx",
+    "prev_dy",
+    "goal_distance",
+    "goal_angle",
+    "period_id",
+    "time_seconds",
+    "time_left",
+    "pass_count",
+    "is_home_encoded",
+    "type_encoded",
+    "result_encoded",
+    "is_final_team",
+    "team_possession_pct",
+    "team_switches",
+    "game_clock_min",
+    "final_poss_len"
+  ],
+  "new_features": [
+    "is_final_team",
+    "team_possession_pct",
+    "team_switches",
+    "game_clock_min",
+    "final_poss_len"
+  ],
+  "models": {
+    "model_x": "code/models/experiments/exp_030_phase1a/models/model_x.cbm",
+    "model_y": "code/models/experiments/exp_030_phase1a/models/model_y.cbm"
+  }
+}

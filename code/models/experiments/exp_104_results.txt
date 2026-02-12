@@ -1,0 +1,7 @@
+Ensemble Weight Optimization Results
+==================================================
+CatBoost CV: 13.5311
+XGBoost CV: 13.6511
+LightGBM CV: 13.6336
+Best Ensemble CV: 13.5024
+Best weights: Cat=0.60, XGB=0.15, LGB=0.25

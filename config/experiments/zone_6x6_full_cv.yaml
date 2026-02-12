@@ -1,0 +1,31 @@
+# Zone 6x6 Full CV
+# 전체 Fold CV (최종 검증용)
+
+# 실험 정보
+experiment_name: "zone_6x6_full_cv"
+description: "전체 5-Fold CV - 최종 검증"
+
+# 모델 설정
+model_type: "zone"
+model_params:
+  zone_size: 6
+  direction_bins: 45
+  min_samples: 25
+  quantile: 0.50
+
+# 데이터 설정
+use_cache: true
+sample_rate: 1.0  # 전체 데이터
+
+# Cross Validation 설정
+n_folds: 5
+fold_indices: null  # 전체 Fold 사용
+random_state: 42
+
+# 검증 설정
+check_leakage: true
+sweet_spot_range: [16.27, 16.34]
+
+# 제출 설정
+auto_submit: false
+submit_threshold: 0.5

@@ -1,0 +1,20 @@
+name,cv,public,gap,complexity,approach
+Zone 6x6 (safe_fold13),16.3356,16.3639,0.0283,Low,Zone
+Phase 2 (domain_features_lgbm),15.38,16.81,1.43,High,GBDT+Features
+LSTM v2 (sampling),13.18,20.08,6.9,Very High,Deep Learning
+LSTM v3 (full),14.36,17.29,2.93,Very High,Deep Learning
+LSTM v5 (simplified),14.44,17.44,3.0,High,Deep Learning
+Zone 5x5,16.4278,16.5121,0.0843,Low,Zone
+Zone 7x7,16.3023,16.4458,0.1435,Low,Zone
+Zone 8x8,16.2925,16.5152,0.2227,Low,Zone
+Zone 9x9,16.2844,16.5637,0.2793,Low,Zone
+Direction 40deg,16.31,16.4488,0.1388,Low,Zone
+Direction 50deg,16.3191,16.4622,0.1431,Low,Zone
+min_samples=20,16.3102,16.4461,0.1359,Low,Zone
+min_samples=22,16.3166,16.4524,0.1358,Low,Zone
+min_samples=24,16.3249,16.458,0.1331,Low,Zone
+Quantile 0.40,16.3188,16.4547,0.1359,Low,Zone
+Quantile 0.45,16.3265,16.4588,0.1323,Low,Zone
+Quantile 0.55,16.3495,16.4821,0.1326,Low,Zone
+Quantile 0.60,16.3607,16.4922,0.1315,Low,Zone
+Hybrid Zone,16.2784,16.5326,0.2542,Medium,Zone

@@ -1,0 +1,44 @@
+{
+  "experiment": "exp_035_phase1a_plus",
+  "cv_mean": 10.223268087834546,
+  "cv_std": 0.008529089727087335,
+  "cv_folds": [
+    10.220735958529323,
+    10.214320960124077,
+    10.234747344850238
+  ],
+  "n_folds": 3,
+  "n_features": 24,
+  "feature_cols": [
+    "episode_id",
+    "action_id",
+    "zone_x",
+    "zone_y",
+    "prev_dx",
+    "prev_dy",
+    "direction",
+    "goal_distance",
+    "goal_angle",
+    "time_left",
+    "game_clock_min",
+    "pass_count",
+    "is_home_encoded",
+    "type_encoded",
+    "result_encoded",
+    "is_final_team",
+    "team_possession_pct",
+    "team_switches",
+    "final_poss_len",
+    "ball_speed",
+    "distance_to_goal_line",
+    "distance_to_sideline",
+    "possession_duration",
+    "pressure_level"
+  ],
+  "n_samples": 356721,
+  "baseline": {
+    "name": "Phase1A",
+    "cv": 15.45,
+    "improvement": 5.226731912165453
+  }
+}

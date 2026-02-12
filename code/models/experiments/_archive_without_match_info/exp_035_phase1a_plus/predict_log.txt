@@ -1,0 +1,81 @@
+
+================================================================================
+exp_035: Generate Submission (CV 10.22!)
+================================================================================
+
+  Checking prerequisites...
+  ✓ All prerequisites found
+
+================================================================================
+Step 1: Loading Trained Models
+================================================================================
+  Loading model_x_catboost.pkl...
+    ✓ Loaded
+  Loading model_y_catboost.pkl...
+    ✓ Loaded
+
+================================================================================
+Step 2: Loading Test Features
+================================================================================
+  Loading test_phase1a_plus_features.csv...
+    Test passes: 53,110
+    Test episodes: 2414
+    Columns: 37
+
+================================================================================
+Step 3: Preparing Test Features
+================================================================================
+  Features used in training: 24
+  Feature list: ['episode_id', 'action_id', 'zone_x', 'zone_y', 'prev_dx', 'prev_dy', 'direction', 'goal_distance', 'goal_angle', 'time_left', 'game_clock_min', 'pass_count', 'is_home_encoded', 'type_encoded', 'result_encoded', 'is_final_team', 'team_possession_pct', 'team_switches', 'final_poss_len', 'ball_speed', 'distance_to_goal_line', 'distance_to_sideline', 'possession_duration', 'pressure_level']
+  ✓ All features present in test data
+  ✓ No missing values
+  ✓ No infinite values
+
+  Using all 53110 passes for prediction
+  Total episodes: 2414
+  Test data shape: (53110, 24)
+
+================================================================================
+Step 4: Generating Predictions
+================================================================================
+  Predicting end_x...
+    Mean: 50.61, Std: 22.37
+    Min: -0.96, Max: 105.21
+
+  Predicting end_y...
+    Mean: 34.23, Std: 17.21
+    Min: -4.57, Max: 69.94
+
+  Clipping to field boundaries...
+    ✓ Predictions clipped
+
+================================================================================
+Step 5: Creating Submission File
+================================================================================
+  All predictions shape: (53110, 4)
+  Selecting last prediction per episode (max action_id)...
+  Submission shape: (2414, 3)
+  Expected: (2414, 3)
+  ✓ Validation passed
+
+  Submission statistics:
+    end_x: 63.25 ± 20.90
+    end_y: 33.91 ± 18.74
+
+================================================================================
+Step 6: Saving Submission
+================================================================================
+  Saving to: submission_phase1a_plus_cv10.2233.csv
+  ✓ Submission saved
+
+================================================================================
+Submission Generation Complete!
+================================================================================
+  File: submission_phase1a_plus_cv10.2233.csv
+  Rows: 2414
+  CV Score: 10.22 (Phase1A 15.45 대비 +5.23!)
+
+  Next step:
+    1. Submit to DACON!
+    2. Update SUBMISSION_LOG.md after submission
+================================================================================

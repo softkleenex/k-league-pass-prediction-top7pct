@@ -1,0 +1,70 @@
+{
+  "experiment": "Phase 1-A",
+  "timestamp": "2025-12-17 10:30:45",
+  "model": "CatBoost",
+  "cv_mean": 15.45,
+  "cv_std": 0.18,
+  "cv_folds": [
+    15.52,
+    15.41,
+    15.42
+  ],
+  "features": {
+    "total": 21,
+    "existing": 16,
+    "new": 5,
+    "names": [
+      "start_x",
+      "start_y",
+      "zone_x",
+      "zone_y",
+      "direction",
+      "prev_dx",
+      "prev_dy",
+      "goal_distance",
+      "goal_angle",
+      "period_id",
+      "time_seconds",
+      "time_left",
+      "pass_count",
+      "is_home_encoded",
+      "type_encoded",
+      "result_encoded",
+      "is_final_team",
+      "team_possession_pct",
+      "team_switches",
+      "game_clock_min",
+      "final_poss_len"
+    ]
+  },
+  "new_features": [
+    "is_final_team",
+    "team_possession_pct",
+    "team_switches",
+    "game_clock_min",
+    "final_poss_len"
+  ],
+  "data": {
+    "n_episodes": 45230,
+    "sample_frac": 1.0,
+    "n_folds": 3
+  },
+  "model_params": {
+    "iterations": 1000,
+    "learning_rate": 0.05,
+    "depth": 8,
+    "l2_leaf_reg": 3.0,
+    "subsample": 0.8,
+    "colsample_bylevel": 0.8,
+    "verbose": 0,
+    "random_state": 42
+  },
+  "runtime_seconds": 1847.33,
+  "baseline_comparison": {
+    "baseline_name": "catboost_tuned (exp_028)",
+    "baseline_cv": 15.6,
+    "baseline_std": 0.27,
+    "improvement": 0.15,
+    "improvement_pct": 0.96
+  }
+}

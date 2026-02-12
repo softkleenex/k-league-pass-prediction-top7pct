@@ -1,0 +1,77 @@
+
+================================================================================
+exp_035: Extract Phase1A + Selected Features
+================================================================================
+
+Strategy:
+  Phase1A baseline: 21 features
+  Selected advanced: 5 features
+  Total: 26 features
+
+Selected features (valid for last passes):
+  1. ball_speed
+  2. distance_to_goal_line
+  3. distance_to_sideline
+  4. possession_duration
+  5. pressure_level
+
+================================================================================
+Step 1: Loading Data
+================================================================================
+  Loading train.csv...
+    Total passes: 356,721
+    Unique players: 446
+    Unique games: 198
+
+  Loading test.csv (episode metadata)...
+    Test episodes: 2,414
+  Loading individual episode CSV files...
+    Loaded 53,110 passes from 2414 episodes
+    Unique games: 30
+
+================================================================================
+Step 2: Creating Features (TRAIN)
+================================================================================
+
+  Creating Phase1A baseline features (21)...
+    ✓ Phase1A features created
+
+  Creating selected advanced features (5)...
+    ✓ Selected advanced features created
+
+  Total features: 37
+  Total rows: 356,721
+
+================================================================================
+Step 2: Creating Features (TEST)
+================================================================================
+
+  Creating Phase1A baseline features (21)...
+    ✓ Phase1A features created
+
+  Creating selected advanced features (5)...
+    ✓ Selected advanced features created
+
+  Total features: 37
+  Total rows: 53,110
+
+================================================================================
+Step 3: Saving Feature-Engineered Datasets
+================================================================================
+  Saving train_phase1a_plus_features.csv...
+    ✓ Saved (356,721 rows, 37 columns)
+
+  Saving test_phase1a_plus_features.csv...
+    ✓ Saved (53,110 rows, 37 columns)
+
+================================================================================
+Feature Extraction Complete!
+================================================================================
+  Output files:
+    - train_phase1a_plus_features.csv
+    - test_phase1a_plus_features.csv
+
+  Next steps:
+    1. python train_phase1a_plus_model.py
+    2. If CV < 15.0, python predict_submission.py
+================================================================================

@@ -1,0 +1,12 @@
+Weighted Ensemble Summary
+============================================================
+
+Input 1: Phase1A (Public 15.35, CV 15.45)
+Input 2: exp_036 (Public 15.38, CV 15.4881)
+
+  weights                      filename    mean_x    mean_y     std_x     std_y
+  0.7:0.3 submission_weighted_70_30.csv 67.864822 33.979845 20.369338 20.501283
+  0.6:0.4 submission_weighted_60_40.csv 67.860140 33.983983 20.351603 20.501955
+0.55:0.45 submission_weighted_55_45.csv 67.857799 33.986052 20.343558 20.503231
+
+Note: Phase1A gets higher weight as it has better Public LB score.

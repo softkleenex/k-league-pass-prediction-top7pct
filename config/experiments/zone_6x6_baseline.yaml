@@ -1,0 +1,31 @@
+# Zone 6x6 Baseline 설정
+# 현재 Best 모델 (Public 16.36)
+
+# 실험 정보
+experiment_name: "zone_6x6_baseline"
+description: "Zone 6x6 통계 모델 - 검증된 최적 설정"
+
+# 모델 설정
+model_type: "zone"
+model_params:
+  zone_size: 6
+  direction_bins: 45
+  min_samples: 25
+  quantile: 0.50
+
+# 데이터 설정
+use_cache: true
+sample_rate: 1.0  # 전체 데이터
+
+# Cross Validation 설정
+n_folds: 5
+fold_indices: [1, 3]  # Fold 1, 3만 사용 (빠른 검증)
+random_state: 42
+
+# 검증 설정
+check_leakage: true
+sweet_spot_range: [16.27, 16.34]  # CV Sweet Spot
+
+# 제출 설정
+auto_submit: false  # 수동 제출 (안전)
+submit_threshold: 0.5  # Gap < 0.5면 제출 추천
