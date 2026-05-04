@@ -3,11 +3,10 @@
 > **DACON K리그-서울시립대 AI 경진대회 (Track1 알고리즘 부문)**  
 > **Team LifeTwin AI (이상재)**  
 >
-> **🏆 Final Results**
-> - **Rank:** **121st** / 1,740 Teams (Top 7%)
-> - **Private Score:** **13.5100**
+> **🏆 Final Results (Private Leaderboard)**
+> - **Rank:** **121st** / 1,782 Teams (상위 6.8%)
+> - **Private Score:** **13.5100** (1위: 12.16102, 격차: 1.34898)
 > - **Public Score:** 13.4342
-> - **Status:** Awarded (Top Tier)
 
 ---
 
